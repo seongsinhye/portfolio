@@ -4,6 +4,7 @@ const navLinks = document.getElementById('navLinks');
 const galleryImage = document.getElementById('galleryImage');
 const galleryCaption = document.getElementById('galleryCaption');
 const galleryCounter = document.getElementById('galleryCounter');
+const chatBtn = document.getElementById('chatBtn');
 const statusEl = document.getElementById('contactStatus');
 const form = document.getElementById('contactForm');
 
@@ -15,6 +16,10 @@ if (yearEl) {
 // mobile nav toggle
 navToggle?.addEventListener('click', () => {
   navLinks?.classList.toggle('is-open');
+});
+
+chatBtn?.addEventListener('click', () => {
+  window.location.href = 'gpt.html';
 });
 
 const gallerySlides = [

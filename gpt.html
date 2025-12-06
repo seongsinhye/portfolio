@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPT Studio | Chat UI</title>
+    <link rel="stylesheet" href="gpt.css" />
+  </head>
+  <body class="gpt-body">
+    <header class="app-header">
+      <a class="app-header__brand" href="index.html">← Portfolio</a>
+      <div>
+        <span class="app-header__tag">GPT Studio</span>
+        <strong>Chat with Codex</strong>
+      </div>
+      <button class="app-header__cta" type="button">새 대화</button>
+    </header>
+
+    <main class="chat-app">
+      <aside class="chat-sidebar">
+        <div class="chat-sidebar__profile">
+          <div>
+            <p class="chat-sidebar__eyebrow">나의 역할</p>
+            <h2>백엔드 · 풀스택</h2>
+            <p>실제 작업 전 빠르게 GPT에게 개념/아이디어를 검증하세요.</p>
+          </div>
+        </div>
+        <div class="chat-sidebar__threads">
+          <p class="chat-sidebar__eyebrow">최근 대화</p>
+          <ul>
+            <li class="is-active">Spring Batch 최적화</li>
+            <li>Redis 세션 클러스터</li>
+            <li>API 모니터링 지표</li>
+            <li>AI 기능 아이디어</li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="chat-main" aria-live="polite">
+        <header class="chat-main__header">
+          <div>
+            <h1>GPT-4o</h1>
+            <p>실험 중 · 4096 토큰</p>
+          </div>
+          <!-- <div class="model-select">
+            <label for="model">Model</label>
+            <select id="model">
+              <option value="gpt-4o">GPT-4o</option>
+              <option value="gpt-4o-mini">GPT-4o mini</option>
+              <option value="o1-preview">o1-preview</option>
+            </select>
+          </div> -->
+        </header>
+
+        <div class="chat-stream" id="chatStream">
+          
+        </div>
+
+        <form class="chat-composer" id="chatForm">
+          <label class="sr-only" for="prompt">프롬프트</label>
+          <textarea id="prompt" name="prompt" rows="2" placeholder="무엇이든 물어보세요"></textarea>
+          <div class="chat-composer__actions">
+            <!-- <button type="button" id="attachBtn">파일 첨부</button> -->
+            <button class="btn" type="submit">전송</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="gpt.js"></script>
+  </body>
+</html>
