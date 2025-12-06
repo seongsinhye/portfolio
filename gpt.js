@@ -1,8 +1,13 @@
 const chatForm = document.getElementById('chatForm');
 const chatStream = document.getElementById('chatStream');
 const promptField = document.getElementById('prompt');
+const resetChatBtn = document.getElementById('resetChat');
 
 const CHAT_API_URL = 'http://localhost:1117/api/v1/chatGpt/prompt';
+
+function scrollChatToBottom() {
+  chatStream?.scrollTo({ top: chatStream.scrollHeight, behavior: 'smooth' });
+}
 
 function appendMessage({ role, text }) {
   const article = document.createElement('article');
@@ -25,7 +30,7 @@ function appendMessage({ role, text }) {
   body.append(meta, paragraph);
   article.append(avatar, body);
   chatStream?.append(article);
-  chatStream?.scrollTo({ top: chatStream.scrollHeight, behavior: 'smooth' });
+  scrollChatToBottom();
 
   return { article, textEl: paragraph };
 }
@@ -88,7 +93,13 @@ chatForm?.addEventListener('submit', async (event) => {
   try {
     const reply = await requestChatCompletion(value);
     placeholder.textEl.textContent = reply;
+    scrollChatToBottom();
   } catch (error) {
     placeholder.textEl.textContent = `오류가 발생했습니다: ${error.message}`;
+    scrollChatToBottom();
   }
+});
+
+resetChatBtn?.addEventListener('click', () => {
+  window.location.reload();
 });

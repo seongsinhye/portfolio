@@ -13,7 +13,7 @@
         <span class="app-header__tag">GPT Studio</span>
         <strong>Chat with Codex</strong>
       </div>
-      <button class="app-header__cta" type="button">새 대화</button>
+      <button class="app-header__cta" type="button" id="resetChat">새 대화</button>
     </header>
 
     <main class="chat-app">
@@ -22,10 +22,12 @@
           <div>
             <p class="chat-sidebar__eyebrow">나의 역할</p>
             <h2>백엔드 · 풀스택</h2>
-            <p>실제 작업 전 빠르게 GPT에게 개념/아이디어를 검증하세요.</p>
+            <p>
+              프론트엔드는 Codex로 구축했고, 백엔드는 OpenAI API를 활용해 GPT 모델과 연동했습니다.
+            </p>
           </div>
         </div>
-        <div class="chat-sidebar__threads">
+        <!-- <div class="chat-sidebar__threads">
           <p class="chat-sidebar__eyebrow">최근 대화</p>
           <ul>
             <li class="is-active">Spring Batch 최적화</li>
@@ -33,7 +35,7 @@
             <li>API 모니터링 지표</li>
             <li>AI 기능 아이디어</li>
           </ul>
-        </div>
+        </div> -->
       </aside>
 
       <section class="chat-main" aria-live="polite">

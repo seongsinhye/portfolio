@@ -119,6 +119,8 @@ select {
   flex-direction: column;
   padding: 2rem clamp(1.5rem, 4vw, 4rem);
   gap: 1.5rem;
+  height: calc(100vh - 70px);
+  min-height: 0;
 }
 
 .chat-main__header {
@@ -154,6 +156,7 @@ select {
   flex-direction: column;
   gap: 1.5rem;
   overflow-y: auto;
+  min-height: 0;
 }
 
 .message {
