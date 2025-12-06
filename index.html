@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | 백엔드 & 풀스택 개발자</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <nav class="nav">
+        <div class="logo">Portfolio</div>
+        <button class="nav__toggle" aria-label="Toggle navigation" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero__layout">
+        <div class="hero__main">
+          <div class="hero__content">
+            <p class="hero__eyebrow">Backend · Fullstack Developer</p>
+            <h1>
+              사용자 경험을 우선으로 생각하며,<br />
+              문제를 해결하는 개발자입니다.
+            </h1>
+            <p>
+              Node.js와 TypeScript를 활용해 확장 가능한 API와 실시간 서비스를 구축하고,
+              클라우드 인프라부터 데이터 파이프라인까지 제품의 엔드투엔드를 책임집니다.
+            </p>
+            <div class="hero__actions">
+              <a class="btn" href="#projects">프로젝트 보기</a>
+              <a class="btn btn--ghost" href="#contact">함께 만들어요</a>
+            </div>
+          </div>
+          <div class="hero__card">
+            <p class="hero__card-title">현재 집중하는 것</p>
+            <ul>
+              <li>멱등 REST/GraphQL API 설계와 문서 자동화</li>
+              <li>Kubernetes + Terraform 기반 배포 파이프라인 개선</li>
+              <li>데이터 파이프라인 및 관측성 대시보드 고도화</li>
+            </ul>
+          </div>
+          <div class="hero__info">
+            <div>
+              <p class="hero__info-label">이름</p>
+              <p class="hero__info-value">성신혜</p>
+            </div>
+            <div>
+              <p class="hero__info-label">연락처</p>
+              <a class="hero__info-link" href="tel:+821012345678">010-9317-1207</a>
+            </div>
+            <div>
+              <p class="hero__info-label">이메일</p>
+              <a class="hero__info-link" href="mailto:hello@example.com"
+                >sinhye2428@naver.com</a
+              >
+            </div>
+            <div>
+              <p class="hero__info-label">링크</p>
+              <div class="hero__info-links">
+                <a href="https://github.com/seongsinhye" target="_blank" rel="noreferrer">GitHub</a>
+                <!-- <span>·</span>
+                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"
+                  >LinkedIn</a
+                > -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__photo">
+          <img
+            src="/성신혜_증명사진.jpg"
+            alt="백엔드 및 풀스택 개발자 프로필 이미지"
+            class="hero__photo-img"
+          />
+          <!-- <p class="hero__photo-hint">profile.jpg를 내 얼굴 사진으로 교체하세요.</p> -->
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <span class="scroll-hint__icon"></span>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="about">
+        <div class="section__header">
+          <p class="section__eyebrow">About</p>
+          <h2>사용자를 이해하는 개발자</h2>
+        </div>
+        <div class="about__grid">
+          <p>
+            스타트업에서 2년간 백엔드/풀스택 개발자로 근무하며 제품 초기 MVP부터
+            운영까지 전 과정을 경험했습니다. 비즈니스 요구를 API 계약으로 재해석하고
+            데이터 모델링, 인프라 설계, 배포 자동화까지 직접 리드했습니다.
+          </p>
+          <p>
+            이벤트 기반 아키텍처, 성능 관측 도구(New Relic, Grafana) 도입 등 운영
+            효율화에 관심이 많으며, 프런트엔드와 협업해 API 스키마와 디자인 시스템이
+            나란히 진화하도록 가이드를 작성합니다.
+          </p>
+        </div>
+        <div class="timeline">
+          <article>
+            <p class="timeline__period">2023.06 - 현재</p>
+            <h3>백엔드 & 풀스택 개발자 @ Startline</h3>
+            <p>실험 관리 플랫폼의 API/인프라 총괄, SLA 99.95% 유지</p>
+          </article>
+          <article>
+            <p class="timeline__period">2022.01 - 2023.05</p>
+            <h3>UI 엔지니어 @ StudioQ</h3>
+            <p>디자인 시스템 구축 및 접근성 기준 적용</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="skills">
+        <div class="section__header">
+          <p class="section__eyebrow">Skills</p>
+          <h2>강점과 툴셋</h2>
+        </div>
+          <div class="skills">
+            <div class="skills__card">
+              <h3>Languages</h3>
+              <p>TypeScript, JavaScript, Go, SQL</p>
+            </div>
+            <div class="skills__card">
+              <h3>Frameworks</h3>
+              <p>Node.js, NestJS, Express, Next.js</p>
+            </div>
+            <div class="skills__card">
+              <h3>Tools</h3>
+              <p>Docker, AWS, PostgreSQL, Redis</p>
+            </div>
+            <div class="skills__card">
+              <h3>Focus</h3>
+              <p>Distributed systems, DevOps, observability</p>
+            </div>
+          </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section__header">
+          <p class="section__eyebrow">Projects</p>
+          <h2>대표 작업</h2>
+        </div>
+        <div class="projects">
+          <article class="project-card">
+            <div class="project-card__badge">2024</div>
+            <h3>Growth Experiment Hub</h3>
+            <p>
+              PM, 디자이너와 협업해 실험 템플릿을 제공하는 SaaS 대시보드를
+              리디자인하고 반응형으로 재구현했습니다.
+            </p>
+            <ul>
+              <li>실험 카드 컴포넌트 재사용률 80% 달성</li>
+              <li>로딩 속도 37% 개선</li>
+              <li>다국어(영/한) 지원 설계</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="#">Case Study</a>
+              <a href="#">Live Demo</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__badge">2023</div>
+            <h3>Insight Dashboard</h3>
+            <p>
+              데이터 분석 결과를 시각화한 내부 대시보드. Atomic 디자인을 적용해
+              팀원 누구나 컴포넌트를 재사용할 수 있게 만들었습니다.
+            </p>
+            <ul>
+              <li>컴포넌트 문서화 + Storybook</li>
+              <li>시맨틱 버전 관리 자동화</li>
+              <li>사용자 정의 테마 저장 기능</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="#">Read More</a>
+              <a href="#">GitHub</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__badge">2022</div>
+            <h3>Creator Landing</h3>
+            <p>
+              크리에이터 온보딩을 위한 반응형 랜딩 페이지. SEO 최적화와 컨텐츠
+              실험을 빠르게 돌릴 수 있도록 CMS 연동을 진행했습니다.
+            </p>
+            <ul>
+              <li>Next.js + headless CMS 연동</li>
+              <li>Hero 섹션 AB 테스트</li>
+              <li>크로스브라우징 QA</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="#">Design Doc</a>
+              <a href="#">Live</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="contact">
+        <div class="section__header">
+          <p class="section__eyebrow">Contact</p>
+          <h2>함께 일하고 싶다면</h2>
+        </div>
+        <form class="contact" id="contactForm">
+          <div class="contact__field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="이름" required />
+          </div>
+          <div class="contact__field">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="이메일"
+              required
+            />
+          </div>
+          <div class="contact__field contact__field--full">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="프로젝트 소개나 협업 아이디어를 알려주세요"
+              required
+            ></textarea>
+          </div>
+          <button class="btn" type="submit">메시지 보내기</button>
+          <p class="contact__status" id="contactStatus" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Backend · Fullstack Developer. Built with passion.</p>
+      <div class="footer__links">
+        <a href="mailto:hello@example.com">Email</a>
+        <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+          LinkedIn
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
