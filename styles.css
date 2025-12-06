@@ -357,6 +357,73 @@ ul {
   gap: 1.5rem;
 }
 
+.projects__gallery {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.gallery__arrow {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.gallery__arrow:hover {
+  background: var(--accent);
+  color: #050507;
+}
+
+.gallery__viewport {
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  background: var(--card);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.gallery__image {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 1rem;
+  background: #14141d;
+}
+
+.gallery__meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.gallery__counter {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.gallery__hint {
+  margin: 0 0 2rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
 .project-card {
   border: 1px solid var(--border);
   border-radius: 1.5rem;
