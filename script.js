@@ -24,22 +24,22 @@ chatBtn?.addEventListener('click', () => {
 
 const gallerySlides = [
   {
-    src: 'images/project-1.jpg',
+    src: 'Images/project-1.jpg',
     alt: '제주도 공공하수 처리 현대화',
     caption: '제주도 공공하수 처리 현대화 ',
   },
   {
-    src: 'images/project-2.jpg',
+    src: 'Images/project-2.jpg',
     alt: '갈매수질복원센터',
     caption: '갈매수질복원센터',
   },
   {
-    src: 'images/project-3.jpg',
+    src: 'Images/project-3.jpg',
     alt: '스마트 정수장',
     caption: '스마트 정수장',
   },
   {
-    src: 'images/project-4.jpg',
+    src: 'Images/project-4.jpg',
     alt: '자산관리 - 합천',
     caption: '자산관리 - 합천',
   },
