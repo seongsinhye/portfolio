@@ -5,6 +5,7 @@ const galleryImage = document.getElementById('galleryImage');
 const galleryCaption = document.getElementById('galleryCaption');
 const galleryCounter = document.getElementById('galleryCounter');
 const chatBtn = document.getElementById('chatBtn');
+const chatBtn_Two = document.getElementById('chatBtn_Two');
 const statusEl = document.getElementById('contactStatus');
 const form = document.getElementById('contactForm');
 
@@ -19,7 +20,10 @@ navToggle?.addEventListener('click', () => {
 });
 
 chatBtn?.addEventListener('click', () => {
-  window.location.href = 'gpt.html';
+  window.location.href = '/portfolio/gpt.html';
+});
+chatBtn_Two?.addEventListener('click', () => {
+  window.location.href = '/portfolio/gpt.html';
 });
 
 const gallerySlides = [
