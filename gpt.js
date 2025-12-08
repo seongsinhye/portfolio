@@ -3,7 +3,7 @@ const chatStream = document.getElementById('chatStream');
 const promptField = document.getElementById('prompt');
 const resetChatBtn = document.getElementById('resetChat');
 
-const CHAT_API_URL = 'http://211.37.173.148:1117/api/v1/chatGpt/prompt';
+const CHAT_API_URL = 'http://211.37.173.148:111/AP_back/api/v1/chatGpt/prompt';
 
 function scrollChatToBottom() {
   chatStream?.scrollTo({ top: chatStream.scrollHeight, behavior: 'smooth' });
